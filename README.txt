@@ -1,0 +1,1 @@
+Match Scheduler is a PyQt program meant to facilitate tournament match scheduling.
