@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
 
-try:
-    from PySide import QtCore
-except:
-    from PyQt4.QtCore import pyqtSlot as Slot
-    from PyQt4 import QtCore
+from PyQt5.QtCore import QObject
 
-class MatchScheduler(QObject):
-    def __init__(self):
-        QObject.__init__(self)
-        pass
+class MatchScheduler(object):
+    def __init__(self, matchGetter, matches=None):
+        self.matches = matches
+        self.matchGetter = matchGetter
