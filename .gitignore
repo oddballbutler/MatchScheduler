@@ -4,3 +4,8 @@
 *.autosave
 *.pro
 *.pro.user
+
+############
+##Python
+############
+__*
