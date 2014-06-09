@@ -7,3 +7,9 @@ class Match(object):
     def __init__(self, id, participants):
         self.id = id
         self.participants = participants
+
+    def __repr__(self):
+        return str({"id":self.id, "participants":self.participants})
+
+    def __str__(self):
+        return str({"id":self.id, "participants":self.participants})
